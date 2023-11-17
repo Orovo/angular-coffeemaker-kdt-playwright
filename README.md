@@ -20,8 +20,6 @@ You can find Node.js installer here: https://nodejs.org/en/download
 To install the required version of the Angular framework use the following commands:
 > npm install
 
-> npm audit fix
-
 > npm link @angular/cli
 
 ### 1.2 Launch and view
