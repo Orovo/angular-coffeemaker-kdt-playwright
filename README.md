@@ -45,30 +45,6 @@ Now the project is running and it's connected to a db filled with valid data. To
 
 <br/>
 
-## 3. Cypress  
-
-### 3.1 Installation
-
-Created following the instructions in the Cypress documentation: https://docs.cypress.io/guides/getting-started/installing-cypress  
-
-If Cypress was not already installed, first navigate to the project's repo: 
-> cd /your/project/path  
-
-... and then use the following CLI call: 
-> npm install cypress --save-dev
-
-### 3.2 Launch and view
-
-To start the Cypress Test Runner UI and see all executable tests: 
-> npx cypress open 
-
-**Note 1:**  
-It is normal for the visual snapshot test to fail when running all tests. Go into the header section and run it separately.
-
-**Note 2:**  
-It is _also_ normal for the visual test "looks the same on every page" to fail when running it separately for the first time. To fix this, first run header.spec.js only. In the field of the failing test, click "COMPARE SNAPSHOT". This opens a window, comparing 2 snapshots. Here, click "Update snapshot". Then re-run the test. Repeat this step for every failing page. One after the other will succeed.  
-
-<br/>
 
 ## 4. Interesting Files and Folders
 
