@@ -1,6 +1,12 @@
 # Smart Coffeemaker made in Angular
 
-System under Test for the Bachelor Thesis of Christopher Dührkop (Matrikelnummer 2390000). This project can be also be found on GitHub https://github.com/ChrisDue/angular-coffeemaker. All important info to get this app started is listed below. 
+System created by Christopher Dührkop for his Bachelor Thesis.
+
+System adapted by Niklas Mollerus for his Bachelor Thesis.
+
+This project can be also be found on GitHub under https://github.com/Orovo/angular-coffeemaker-kdt-playwright or https://github.com/ChrisDue/angular-coffeemaker, for the original version.
+
+All important info to get this app started is listed below.
 
 <br/>
 
@@ -8,13 +14,18 @@ System under Test for the Bachelor Thesis of Christopher Dührkop (Matrikelnumme
 
 ### 1.1 Installation
 
-If NPM was not already installed, use the following CLI call: 
-> npm install -g
+It is required to have a current version of Node.js installed.
+You can find Node.js installer here: https://nodejs.org/en/download
+
+To install the required version of the Angular framework use the following commands:
+> npm install -g @angular/cli
+
+> npm link @angular/cli --force
 
 ### 1.2 Launch and view
 
 To start the web app and open it in browser: 
-> ng serve --open  
+> ng serve --open
 
 Opens your Default Browser on http://localhost:4200/, where the Coffeemaker is running.  
 Here, you won't see any recipes or ingredients listed yet. For these to be loaded, start the DB as explained below. 
