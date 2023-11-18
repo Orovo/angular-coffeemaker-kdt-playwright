@@ -137,6 +137,12 @@ export class MachineService {
 
   /* Get list of all ingredients */
   getIngredients(): Observable<Ingredient[]> {
+    /** Orginalversion *//**
     return this.http.get<Ingredient[]>(this.ingredientsUrl);
+    //*/
+    ///** Fehler 6 *//**
+    return this.http.get<Ingredient[]>(this.ingredientsUrl+"s");
+    //*/
+    
   }
 }
