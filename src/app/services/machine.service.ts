@@ -127,10 +127,10 @@ export class MachineService {
   refillIngredient(ingredient: Ingredient, refillAmount: number): void {
     let ingUrl: string = `${this.ingredientsUrl}/${ingredient.id}`;
     let amountJson = {
-      /** Orginalversion *//**
+      ///** Orginalversion *//**
       "amount": ingredient.amount += refillAmount
       //*/
-      ///** Fehler 7 *//**
+      /** Fehler 7 *//**
       "amount": ingredient.amount -= refillAmount
       //*/
     }
