@@ -28,7 +28,12 @@ export class AddRecipeComponent implements OnInit {
       coffeeAmount: this.coffeeAmountValue ? this.coffeeAmountValue : 0,
       waterAmount: this.waterAmountValue ? this.waterAmountValue : 0,
       milkAmount: this.milkAmountValue ? this.milkAmountValue : 0,
+      /** Orginalversion *//**
       cocoaAmount: this.cocoaAmountValue ? this.cocoaAmountValue : 0,
+      //*/
+      ///** Fehler 2 *//**
+      cocoaAmount: this.coffeeAmountValue ? this.coffeeAmountValue : 0,
+      //*/
       sugarAmount: this.sugarAmountValue ? this.sugarAmountValue : 0
     };
     this.service.addRecipe(enteredRecipe);
