@@ -114,7 +114,12 @@ export class MachineService {
   useIngredient(ingredient: Ingredient, usedAmount: number): void {
     let ingUrl: string = `${this.ingredientsUrl}/${ingredient.id}`;
     let amountJson = {
+      /** Orginalversion *//**
       "amount": ingredient.amount -= usedAmount
+      //*/
+      ///** Fehler 5 *//**
+      "amount": ingredient.amount += usedAmount
+      //*/
     }
     this.http.patch(ingUrl, amountJson, httpOptions)
       .subscribe();
