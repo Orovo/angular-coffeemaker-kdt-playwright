@@ -28,12 +28,12 @@ export class MachineService {
    */
 
   /* Get all existing recipes */
-  /** Orginalversion *//**
+  ///** Orginalversion *//**
   getRecipes(): Observable<Recipe[]> {
     return this.http.get<Recipe[]>(this.recipesUrl);
   }
   //*/
-  ///** Fehler 1 *//**
+  /** Fehler 1 *//**
   getRecipes(): Observable<Recipe[]> {
     return this.http.get<Recipe[]>(this.recipesUrl+"s");
   }
