@@ -127,7 +127,12 @@ export class MachineService {
   refillIngredient(ingredient: Ingredient, refillAmount: number): void {
     let ingUrl: string = `${this.ingredientsUrl}/${ingredient.id}`;
     let amountJson = {
+      /** Orginalversion *//**
       "amount": ingredient.amount += refillAmount
+      //*/
+      ///** Fehler 7 *//**
+      "amount": ingredient.amount -= refillAmount
+      //*/
     }
     this.http.patch(ingUrl, amountJson, httpOptions)
       .subscribe();
