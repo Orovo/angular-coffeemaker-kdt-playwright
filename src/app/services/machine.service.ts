@@ -64,7 +64,12 @@ export class MachineService {
 
   /* Return name of insufficient ingredient, if there is one */
   async enoughIngredientsAvailable(recipe: Recipe): Promise<string> {
+    /** Orginalversion *//**
     let result: string = NONE_STRING;
+    //*/
+    ///** Fehler 4 *//**
+    let result: string = "";
+    //*/
 
     let currentCoffee: Ingredient = await this.getIngredientById(Id.coffee);
     if (currentCoffee.amount < recipe.coffeeAmount) return currentCoffee.name;
