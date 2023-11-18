@@ -28,9 +28,16 @@ export class MachineService {
    */
 
   /* Get all existing recipes */
+  /** Orginalversion *//**
   getRecipes(): Observable<Recipe[]> {
     return this.http.get<Recipe[]>(this.recipesUrl);
   }
+  //*/
+  ///** Fehler 1 *//**
+  getRecipes(): Observable<Recipe[]> {
+    return this.http.get<Recipe[]>(this.recipesUrl+"s");
+  }
+  //*/
 
   /* Add given recipe to DB table of existing ones */
   async addRecipe(enteredRecipe: Recipe): Promise<void> {
