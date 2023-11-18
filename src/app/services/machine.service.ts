@@ -64,10 +64,10 @@ export class MachineService {
 
   /* Return name of insufficient ingredient, if there is one */
   async enoughIngredientsAvailable(recipe: Recipe): Promise<string> {
-    /** Orginalversion *//**
+    ///** Orginalversion *//**
     let result: string = NONE_STRING;
     //*/
-    ///** Fehler 4 *//**
+    /** Fehler 4 *//**
     let result: string = "";
     //*/
 
