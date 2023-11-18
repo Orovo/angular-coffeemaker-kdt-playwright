@@ -16,9 +16,12 @@ All important info to get this app started is listed below.
 
 It is required to have a current version of Node.js installed.
 You can find Node.js installer here: https://nodejs.org/en/download
+It is advised to not install Chocolatey, as that could cause problems.
 
 To install the required version of the Angular framework use the following commands:
 > npm install
+
+> npm install -g
 
 > npm link @angular/cli
 
@@ -57,7 +60,7 @@ Now the project is running and it's connected to a db filled with valid data. To
 <br/>
 
 
-## 4. Interesting Files and Folders
+## 3. Interesting Files and Folders
 
 - /cypress
   - /downloads: Used when testing file download links etc.
