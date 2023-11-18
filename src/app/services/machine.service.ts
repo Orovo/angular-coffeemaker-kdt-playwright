@@ -49,10 +49,10 @@ export class MachineService {
   async brewRecipe(recipe: Recipe): Promise<void> {
     let missingIngredient: string = await this.enoughIngredientsAvailable(recipe);
 
-    /** Orginalversion *//**
+    ///** Orginalversion *//**
     if (missingIngredient != NONE_STRING) {
     //*/
-    ///** Fehler 3 *//**
+    /** Fehler 3 *//**
     if (missingIngredient == NONE_STRING) {
     //*/
       alert("Not enough ingredients! Need more " + missingIngredient);
