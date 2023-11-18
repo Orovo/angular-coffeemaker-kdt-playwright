@@ -21,10 +21,10 @@ export class IngredientItemComponent implements OnInit {
 
   onRefillSubmit() {
     // console.log("Updated ingredient: " + this.ingredient.name + " with " + this.ingredient.amount);
-    /** Orginalversion *//**
+    ///** Orginalversion *//**
     this.service.refillIngredient(this.ingredient, this.refillAmountValue);
     //*/
-    ///** Fehler 8 *//**
+    /** Fehler 8 *//**
     this.service.refillIngredient(this.ingredient, this.refillAmountValue+1);
     //*/
   }
