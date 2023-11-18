@@ -114,10 +114,10 @@ export class MachineService {
   useIngredient(ingredient: Ingredient, usedAmount: number): void {
     let ingUrl: string = `${this.ingredientsUrl}/${ingredient.id}`;
     let amountJson = {
-      /** Orginalversion *//**
+      ///** Orginalversion *//**
       "amount": ingredient.amount -= usedAmount
       //*/
-      ///** Fehler 5 *//**
+      /** Fehler 5 *//**
       "amount": ingredient.amount += usedAmount
       //*/
     }
