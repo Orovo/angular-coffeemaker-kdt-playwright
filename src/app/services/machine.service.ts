@@ -146,6 +146,5 @@ export class MachineService {
     /** Fehler 6 *//**
     return this.http.get<Ingredient[]>(this.ingredientsUrl+"s");
     //*/
-    
   }
 }
