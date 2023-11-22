@@ -62,16 +62,8 @@ Now the project is running and it's connected to a db filled with valid data. To
 
 ## 3. Interesting Files and Folders
 
-- /cypress
-  - /downloads: Used when testing file download links etc.
-  - /fixtures: Unsuccessful attempts at using fixtures for resetting the db between tests
-  - /integration: All the automated tests, structured by pages
-  - /plugins: Importing and configuring plugins
-  - /support: Global variables and methods usable by all tests
-  - /videos: Recordings of tests, only made when activated
 - /src: The application code, structured by components, including http, ts, css and (auto-generated and unused) unit-tests
   - /assets: Usable assets like downloadable files, e.g. the user manual
-- cypress.json: Mainly used to set the most important URLs as global variables and to configure the threshold-value for cypress-plugin-snapshots 
 - db.json: Holds the actual database
 
 
