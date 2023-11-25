@@ -21,21 +21,21 @@ import { checkThatCoffeeIngredientIsVisible
         ,checkThatFormCreateRecipeIsVisible 
         ,checkThatIngredientAmountsAreCorrectlyAdded
         ,checkThatIngredientLevelsAreTooLowToBrewAmericano
-        ,checkErrorMessageForBrewingAmericano
+        ,checkForErrorMessageForBrewingAmericano
         ,checkThatIngredientLevelsAreTooLowToBrewEspresso
-        ,checkErrorMessageForBrewingEspresso
+        ,checkForErrorMessageForBrewingEspresso
         ,checkThatIngredientLevelsAreTooLowToBrewLatteMacchiato
-        ,checkErrorMessageForBrewingLatteMacchiato
+        ,checkForErrorMessageForBrewingLatteMacchiato
         ,checkThatIngredientLevelsAreTooLowToBrewHotChocolate
-        ,checkErrorMessageForBrewingHotChocolate
+        ,checkForErrorMessageForBrewingHotChocolate
         ,checkThatIngredientLevelsAreSufficientToBrewAmericanoOrStockUp
-        ,checkSuccessMessageForBrewingAmericano
+        ,checkForSuccessMessageForBrewingAmericano
         ,checkThatIngredientLevelsAreSufficientToBrewEspressoOrStockUp
-        ,checkSuccessMessageForBrewingEspresso
+        ,checkForSuccessMessageForBrewingEspresso
         ,checkThatIngredientLevelsAreSufficientToBrewLatteMacchiatoOrStockUp
-        ,checkSuccessMessageForBrewingLatteMacchiato
+        ,checkForSuccessMessageForBrewingLatteMacchiato
         ,checkThatIngredientLevelsAreSufficientToBrewHotChocolateOrStockUp
-        ,checkSuccessMessageForBrewingHotChocolate
+        ,checkForSuccessMessageForBrewingHotChocolate
         ,createTestRecipeWithFormCreateRecipe
         ,checkThatRecipeTestRecipeIsVisibleAndCorrect
         ,getIngredientLevels
@@ -97,25 +97,25 @@ test('Test 06: Check that correct ingredient amounts are added.', async ({ page 
 test('Test 07: Check that success message is shown when brewing with sufficient ingredients.', async ({ page }) => {
     await goToCoffeemakerWebsite(page);
     await checkThatIngredientLevelsAreSufficientToBrewAmericanoOrStockUp(page);
-    await checkSuccessMessageForBrewingAmericano(page);
+    await checkForSuccessMessageForBrewingAmericano(page);
     await checkThatIngredientLevelsAreSufficientToBrewEspressoOrStockUp(page);
-    await checkSuccessMessageForBrewingEspresso(page);
+    await checkForSuccessMessageForBrewingEspresso(page);
     await checkThatIngredientLevelsAreSufficientToBrewLatteMacchiatoOrStockUp(page);
-    await checkSuccessMessageForBrewingLatteMacchiato(page);
+    await checkForSuccessMessageForBrewingLatteMacchiato(page);
     await checkThatIngredientLevelsAreSufficientToBrewHotChocolateOrStockUp(page);
-    await checkSuccessMessageForBrewingHotChocolate(page);
+    await checkForSuccessMessageForBrewingHotChocolate(page);
 });
 
 test('Test 08: Check that error message is shown when brewing witout sufficient ingredients.', async ({ page }) => {
     await goToCoffeemakerWebsite(page);
     await checkThatIngredientLevelsAreTooLowToBrewAmericano(page);
-    await checkErrorMessageForBrewingAmericano(page);
+    await checkForErrorMessageForBrewingAmericano(page);
     await checkThatIngredientLevelsAreTooLowToBrewEspresso(page);
-    await checkErrorMessageForBrewingEspresso(page);
+    await checkForErrorMessageForBrewingEspresso(page);
     await checkThatIngredientLevelsAreTooLowToBrewLatteMacchiato(page);
-    await checkErrorMessageForBrewingLatteMacchiato(page);
+    await checkForErrorMessageForBrewingLatteMacchiato(page);
     await checkThatIngredientLevelsAreTooLowToBrewHotChocolate(page);
-    await checkErrorMessageForBrewingHotChocolate(page);
+    await checkForErrorMessageForBrewingHotChocolate(page);
 });
 
 test('Test 09: Add recipe and check that it has been added to the list.', async ({ page }) => {

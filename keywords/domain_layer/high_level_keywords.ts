@@ -205,30 +205,30 @@ export async function checkThatIngredientLevelsAreTooLowToBrewHotChocolate(page:
 
 /*----------------------------------------------------------------------------*/
 
-async function checkErrorMessageForBrewingRecipe(page: Page, recipeName: string): Promise<void> {
+async function checkForErrorMessageForBrewingRecipe(page: Page, recipeName: string): Promise<void> {
     await switchToRecipesTab(page);
     await checkThatBrewingWillFail(page);
     await tryToBrewRecipe(page, recipeName);
 };
 
-export async function checkErrorMessageForBrewingAmericano(page: Page): Promise<void> {
+export async function checkForErrorMessageForBrewingAmericano(page: Page): Promise<void> {
     let recipeName = "Americano";
-    await checkErrorMessageForBrewingRecipe(page, recipeName);
+    await checkForErrorMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkErrorMessageForBrewingEspresso(page: Page): Promise<void> {
+export async function checkForErrorMessageForBrewingEspresso(page: Page): Promise<void> {
     let recipeName = "Espresso";
-    await checkErrorMessageForBrewingRecipe(page, recipeName);
+    await checkForErrorMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkErrorMessageForBrewingLatteMacchiato(page: Page): Promise<void> {
+export async function checkForErrorMessageForBrewingLatteMacchiato(page: Page): Promise<void> {
     let recipeName = "Latte Macchiato";
-    await checkErrorMessageForBrewingRecipe(page, recipeName);
+    await checkForErrorMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkErrorMessageForBrewingHotChocolate(page: Page): Promise<void> {
+export async function checkForErrorMessageForBrewingHotChocolate(page: Page): Promise<void> {
     let recipeName = "Hot Chocolate";
-    await checkErrorMessageForBrewingRecipe(page, recipeName);
+    await checkForErrorMessageForBrewingRecipe(page, recipeName);
 };
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -263,30 +263,30 @@ export async function checkThatIngredientLevelsAreSufficientToBrewHotChocolateOr
 
 /*----------------------------------------------------------------------------*/
 
-async function checkSuccessMessageForBrewingRecipe(page: Page, recipeName: string): Promise<void> {
+async function checkForSuccessMessageForBrewingRecipe(page: Page, recipeName: string): Promise<void> {
     await switchToRecipesTab(page);
     await checkThatBrewingWillSucceed(page);
     await tryToBrewRecipe(page, recipeName);
 };
 
-export async function checkSuccessMessageForBrewingAmericano(page: Page): Promise<void> {
+export async function checkForSuccessMessageForBrewingAmericano(page: Page): Promise<void> {
     let recipeName = "Americano";
-    await checkSuccessMessageForBrewingRecipe(page, recipeName);
+    await checkForSuccessMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkSuccessMessageForBrewingEspresso(page: Page): Promise<void> {
+export async function checkForSuccessMessageForBrewingEspresso(page: Page): Promise<void> {
     let recipeName = "Espresso";
-    await checkSuccessMessageForBrewingRecipe(page, recipeName);
+    await checkForSuccessMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkSuccessMessageForBrewingLatteMacchiato(page: Page): Promise<void> {
+export async function checkForSuccessMessageForBrewingLatteMacchiato(page: Page): Promise<void> {
     let recipeName = "Latte Macchiato";
-    await checkSuccessMessageForBrewingRecipe(page, recipeName);
+    await checkForSuccessMessageForBrewingRecipe(page, recipeName);
 };
 
-export async function checkSuccessMessageForBrewingHotChocolate(page: Page): Promise<void> {
+export async function checkForSuccessMessageForBrewingHotChocolate(page: Page): Promise<void> {
     let recipeName = "Hot Chocolate";
-    await checkSuccessMessageForBrewingRecipe(page, recipeName);
+    await checkForSuccessMessageForBrewingRecipe(page, recipeName);
 };
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
