@@ -147,8 +147,7 @@ export async function checkThatRecipeInputFieldCocoaAmountIsVisible(page: Page):
 };
 
 export async function checkThatRecipeButtonCreateNewRecipeIsVisible(page: Page): Promise<void> {
-    let form = page.locator('id=form-new-recipe');
-    await expect(form.getByRole('button', { name: 'Create new Recipe' }), "button 'Create new Recipe' is not visible").toBeVisible();
+    await expect(await getButtonCreateNewRecipe(page), "button 'Create new Recipe' is not visible").toBeVisible();
 };
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
