@@ -331,7 +331,6 @@ export async function checkThatIngredientLevelsAreAsExpected(page: Page, usedRec
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 export async function findMissingIngredient(page: Page, missingIngredient: [boolean, string]): Promise<void> {
-    // page.on('dialog', dialog => {
     page.once('dialog', dialog => {
         missingIngredient[0] = false;
         missingIngredient[1] = "";
