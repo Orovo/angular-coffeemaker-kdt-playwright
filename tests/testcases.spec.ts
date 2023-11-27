@@ -53,7 +53,7 @@ test.afterEach(async ({ page }) => {
 });
 
 
-test('Test 01: Check that recipe and ingredient page are avaliable.', async ({ page }) => {
+test('Test 01: Check that recipe and ingredient page are available.', async ({ page }) => {
     await goToCoffeemakerWebsite(page);
     await checkThatWebsiteIsCoffeemaker(page);
     await switchToRecipesTab(page);
@@ -106,7 +106,7 @@ test('Test 07: Check that success message is shown when brewing with sufficient 
     await checkForSuccessMessageForBrewingHotChocolate(page);
 });
 
-test('Test 08: Check that error message is shown when brewing witout sufficient ingredients.', async ({ page }) => {
+test('Test 08: Check that error message is shown when brewing without sufficient ingredients.', async ({ page }) => {
     await goToCoffeemakerWebsite(page);
     await checkThatIngredientLevelsAreTooLowToBrewAmericano(page);
     await checkForErrorMessageForBrewingAmericano(page);
